@@ -23,7 +23,7 @@ export const Routes = () => {
         <div>
             <Nav/>
             <Switch>
-                <Route exact path={PATH.PROFILE} component={Profile}/>
+                <Route exact path='/' component={Profile}/>
                 <Route exact path={PATH.LOGIN} component={Login}/>
                 <Route exact path={PATH.PASSWORD_RECOVERY} component={PasswordRecovery}/>
                 <Route exact path={PATH.ENTERING_NEW_PASSWORD} component={EnteringNewPassword}/>
