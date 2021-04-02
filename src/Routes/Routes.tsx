@@ -7,7 +7,6 @@ import {EnteringNewPassword} from "../components/enteringNewPassword/EnteringNew
 import {Registration} from "../components/registration/Registration";
 import {SuperComponents} from "../components/superComponents/SuperComponents";
 import {Error} from "../components/error404/Error404";
-import {Navlinks} from "./Navlinks/Navlinks";
 import {Nav} from "../components/nav/Nav";
 
 export const PATH = {
@@ -23,7 +22,7 @@ export const Routes = () => {
         <div>
             <Nav/>
             <Switch>
-                <Route exact path='/' component={Profile}/>
+                <Route exact path={PATH.PROFILE} component={Profile}/>
                 <Route exact path={PATH.LOGIN} component={Login}/>
                 <Route exact path={PATH.PASSWORD_RECOVERY} component={PasswordRecovery}/>
                 <Route exact path={PATH.ENTERING_NEW_PASSWORD} component={EnteringNewPassword}/>
